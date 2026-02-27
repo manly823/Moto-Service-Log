@@ -1,0 +1,49 @@
+App Name: Moto Service Log
+Subtitle: Motorcycle Maintenance Tracker
+
+Category: Utilities
+Secondary Category: Productivity
+
+Description:
+Keep your motorcycle in peak condition with Moto Service Log — a visual maintenance tracker built for riders who care about their machines.
+
+Your dashboard shows arc-gauge indicators for every critical service: oil, tires, chain, brakes, spark plugs, and coolant. Each gauge fills from green to yellow to red as service intervals approach, so you always know what needs attention — at a glance.
+
+KEY FEATURES:
+
+• Arc Gauge Dashboard — Six animated arc indicators show remaining service life. Green means good, yellow means due soon, red means overdue.
+
+• Digital Odometer — Motorcycle-style odometer display with your current mileage, always visible on the main screen.
+
+• Service Log — Record every oil change, tire swap, brake job, and more. Search by keyword, filter by service type. Never lose track of what you've done.
+
+• Fuel Tracking — Log every fill-up with liters, price, and odometer reading. See your average consumption (L/100km) calculated automatically. Visualize fuel costs with bar charts.
+
+• Cost Analytics — Pie chart shows where your money goes (oil vs tires vs brakes etc). Monthly trend chart breaks down service and fuel spending over time.
+
+• Reference Guide — Quick-access tables for tire pressure (sport/touring/off-road), chain slack measurement and lubrication intervals, engine oil specs (JASO MA2), coolant, and brake fluid recommendations.
+
+• Customizable Service Intervals — Set how often each service type is due (in km). The dashboard automatically calculates urgency from your last record.
+
+• Data Export — Share all your data as JSON via the built-in ShareLink. Perfect for backup or transferring to a new device.
+
+• Motorcycle Profile — Store your bike's name, make, model, year, fuel tank capacity, and current mileage.
+
+Whether you ride a sportbike, touring machine, or ADV — Moto Service Log helps you ride with confidence knowing every service is tracked and every interval is monitored.
+
+Keywords: motorcycle,maintenance,service,log,tracker,fuel,mileage,oil,tires,chain
+
+Promotional Text:
+Track every service. Monitor every interval. Ride with confidence.
+
+What's New in This Version:
+Initial release with arc-gauge dashboard, service log with search, fuel tracking with charts, cost analytics, reference guide, and JSON data export.
+
+Privacy Policy URL: https://example.com/privacy
+Support URL: https://example.com/support
+
+Copyright: 2026 Moto Service Log
+SKU: motoservicelog2026
+
+Age Rating: 4+
+Price: Free
