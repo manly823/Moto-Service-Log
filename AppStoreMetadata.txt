@@ -1,49 +1,95 @@
-App Name: Moto Service Log
-Subtitle: Motorcycle Maintenance Tracker
+=== APP STORE METADATA ===
 
-Category: Utilities
-Secondary Category: Productivity
+📱 APP NAME (MAX 20 CHARS):
+Moto Service Log
 
-Description:
-Keep your motorcycle in peak condition with Moto Service Log — a visual maintenance tracker built for riders who care about their machines.
+📝 SUBTITLE (MAX 30 CHARS):
+Motorcycle Maintenance Tracker
 
-Your dashboard shows arc-gauge indicators for every critical service: oil, tires, chain, brakes, spark plugs, and coolant. Each gauge fills from green to yellow to red as service intervals approach, so you always know what needs attention — at a glance.
+🔑 KEYWORDS (MAX 100 CHARS, NO SPACES AFTER COMMAS!):
+motorcycle,maintenance,service,log,fuel,mileage,oil,tires,chain,brakes,tracker,moto,riding,gauge
 
-KEY FEATURES:
+📖 DESCRIPTION (PLAIN TEXT ONLY, NO EMOJIS, NO BULLET POINTS):
 
-• Arc Gauge Dashboard — Six animated arc indicators show remaining service life. Green means good, yellow means due soon, red means overdue.
+Moto Service Log is the complete motorcycle maintenance tracker for riders who want to keep their machines in peak condition. Monitor service intervals with visual arc gauges, track fuel consumption, analyze costs, and access essential reference data.
 
-• Digital Odometer — Motorcycle-style odometer display with your current mileage, always visible on the main screen.
+Your main dashboard displays six animated arc-gauge indicators for oil, tires, chain, brakes, spark plugs, and coolant. Each gauge fills from green through yellow to red as service intervals approach or become overdue. A digital odometer display shows your current mileage at all times. Horizontal scrolling cards highlight upcoming and overdue tasks so you never miss critical maintenance.
 
-• Service Log — Record every oil change, tire swap, brake job, and more. Search by keyword, filter by service type. Never lose track of what you've done.
+Record every service event including oil changes, oil filter replacements, air filter changes, spark plug replacements, chain and sprocket work, tire swaps, brake pad replacements, coolant flushes, battery replacements, and general maintenance. Each record stores the date, odometer reading, cost, parts used, and notes. Search through your entire service history by keyword or filter by service type using quick-access filter chips.
 
-• Fuel Tracking — Log every fill-up with liters, price, and odometer reading. See your average consumption (L/100km) calculated automatically. Visualize fuel costs with bar charts.
+Track every fuel fill-up with liters, price per liter, and odometer reading. The app automatically calculates your average fuel consumption in liters per hundred kilometers using the full-tank-to-full-tank method. View fuel cost trends with bar charts showing spending per fill-up over time. A live arc gauge on the fuel entry screen shows tank fill level relative to your bike's capacity.
 
-• Cost Analytics — Pie chart shows where your money goes (oil vs tires vs brakes etc). Monthly trend chart breaks down service and fuel spending over time.
+Analyze your total spending with detailed cost breakdowns. A pie chart shows how your money is distributed across service types. A monthly trend chart displays stacked bars comparing service costs versus fuel costs over time. See total service cost, total fuel cost, and combined spending at a glance.
 
-• Reference Guide — Quick-access tables for tire pressure (sport/touring/off-road), chain slack measurement and lubrication intervals, engine oil specs (JASO MA2), coolant, and brake fluid recommendations.
+Access a built-in reference guide with three sections covering tire pressure specifications for sport, touring, and off-road motorcycles. Chain tension measurement guidelines include proper slack ranges, lubrication intervals, and replacement indicators. Fluid specifications cover engine oil ratings including JASO MA2 for wet clutch compatibility, coolant mixing ratios, and brake fluid types and replacement schedules.
 
-• Customizable Service Intervals — Set how often each service type is due (in km). The dashboard automatically calculates urgency from your last record.
+Customize service intervals for each maintenance type in kilometers. The dashboard automatically calculates urgency based on the distance since your last recorded service. Set your motorcycle profile including name, make, model, year, current mileage, and fuel tank capacity.
 
-• Data Export — Share all your data as JSON via the built-in ShareLink. Perfect for backup or transferring to a new device.
+Export all your data including bike profile, service records, and fuel entries as a JSON file using the built-in share function. Perfect for backup or transferring data.
 
-• Motorcycle Profile — Store your bike's name, make, model, year, fuel tank capacity, and current mileage.
+Whether you ride a sportbike, touring machine, adventure bike, or naked roadster, Moto Service Log helps you ride with confidence knowing every service is tracked and every interval is monitored.
 
-Whether you ride a sportbike, touring machine, or ADV — Moto Service Log helps you ride with confidence knowing every service is tracked and every interval is monitored.
+📱 PRIMARY CATEGORY:
+Utilities
 
-Keywords: motorcycle,maintenance,service,log,tracker,fuel,mileage,oil,tires,chain
+📱 SECONDARY CATEGORY:
+Productivity
 
-Promotional Text:
-Track every service. Monitor every interval. Ride with confidence.
+🎯 AGE RATING:
+4+ (No objectionable content)
 
-What's New in This Version:
-Initial release with arc-gauge dashboard, service log with search, fuel tracking with charts, cost analytics, reference guide, and JSON data export.
+🖼️ SCREENSHOTS NEEDED:
+1. Main dashboard with arc gauges and odometer
+2. Upcoming service tasks with color-coded urgency
+3. Service log list with search and filter chips
+4. Add service form with type picker
+5. Fuel log with bar chart and statistics
+6. Cost analytics with pie chart breakdown
+7. Reference guide with tire pressure specs
 
-Privacy Policy URL: https://example.com/privacy
-Support URL: https://example.com/support
+🔒 PERMISSIONS:
+None required
 
-Copyright: 2026 Moto Service Log
-SKU: motoservicelog2026
+📝 PRIVACY POLICY:
+Not required (no data collection, local storage only)
 
-Age Rating: 4+
-Price: Free
+🌍 AVAILABILITY:
+All territories
+
+💰 PRICING:
+Free
+
+=== TECHNICAL INFO ===
+
+Bundle ID: com.rgutu.motoservicelog
+Version: 1.0
+Build: 1
+iOS Deployment Target: 17.0+
+Device Support: iPhone + iPad
+Orientation: Portrait
+
+=== MARKETING NOTES ===
+
+UNIQUE SELLING POINTS:
+- First visual arc-gauge motorcycle maintenance dashboard on iOS
+- Six animated service indicators with green/yellow/red urgency
+- Digital odometer display styled like real motorcycle instrumentation
+- Automatic fuel consumption calculation (L/100km)
+- Cost breakdown with pie chart and monthly trend analysis
+- Built-in reference guide for tire pressure, chain tension, and fluids
+- JSON data export via ShareLink
+- Customizable service intervals per maintenance type
+- No subscription, no data collection
+
+TARGET KEYWORDS FOR ASO:
+- motorcycle maintenance
+- moto service log
+- bike maintenance tracker
+- fuel consumption tracker
+- oil change reminder
+- tire pressure guide
+- chain maintenance
+- motorcycle costs
+
+COMPETITIVE ADVANTAGE:
+Zero competition for visual gauge-based motorcycle maintenance tracking. Existing motorcycle apps focus on ride tracking or GPS routes, not maintenance management. This app provides a unique dashboard with animated arc gauges that show service urgency at a glance, something no other motorcycle app offers. The combination of service tracking, fuel logging, cost analytics, and reference data in one app replaces notebooks, spreadsheets, and multiple separate apps. The arc-gauge dashboard makes checking maintenance status as intuitive as reading your motorcycle's actual instrument cluster.
