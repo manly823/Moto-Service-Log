@@ -21,8 +21,71 @@ final class MotoManager: ObservableObject {
 
     func setupBike(_ bike: Bike) {
         bikes = [bike]
-        services = []
-        fuelLog = []
+        services = generateServices(for: bike)
+        fuelLog = generateFuel(for: bike)
+    }
+
+    // MARK: - Smart Sample Data (based on user's mileage)
+
+    private func generateServices(for bike: Bike) -> [ServiceRecord] {
+        let km = bike.currentMileage
+        guard km > 0 else { return [] }
+        let cal = Calendar.current
+        let now = Date()
+        var records: [ServiceRecord] = []
+
+        let schedule: [(ServiceType, Int, Double, String)] = [
+            (.oilChange, 5000, 45, "10W-40 synthetic"),
+            (.oilFilter, 10000, 15, "OEM filter"),
+            (.chain, 8000, 25, "Chain lube + adjust"),
+            (.airFilter, 15000, 20, "OEM air filter"),
+            (.brakes, 12000, 65, "Front brake pads"),
+            (.tires, 10000, 280, "Front + rear set"),
+            (.sparkPlugs, 18000, 35, "Iridium plugs"),
+            (.coolant, 20000, 30, "Premix coolant"),
+        ]
+
+        for (type, interval, cost, parts) in schedule {
+            guard km >= interval / 2 else { continue }
+            let lastKm = km - (km % interval == 0 ? interval : km % interval)
+            guard lastKm > 0 else { continue }
+            let daysAgo = Int(Double(km - lastKm) / 40)
+            let date = cal.date(byAdding: .day, value: -max(daysAgo, 1), to: now) ?? now
+            records.append(ServiceRecord(bikeId: bike.id, type: type, date: date, mileage: lastKm, cost: cost, parts: parts))
+
+            if km >= interval * 2 {
+                let prevKm = lastKm - interval
+                guard prevKm > 0 else { continue }
+                let prevDays = Int(Double(km - prevKm) / 40)
+                let prevDate = cal.date(byAdding: .day, value: -max(prevDays, 2), to: now) ?? now
+                records.append(ServiceRecord(bikeId: bike.id, type: type, date: prevDate, mileage: prevKm, cost: cost * Double.random(in: 0.85...1.15), parts: parts))
+            }
+        }
+
+        return records.sorted { $0.date > $1.date }
+    }
+
+    private func generateFuel(for bike: Bike) -> [FuelEntry] {
+        let km = bike.currentMileage
+        guard km > 300 else { return [] }
+        let cap = bike.fuelCapacityL > 0 ? bike.fuelCapacityL : 15
+        let cal = Calendar.current
+        let now = Date()
+        var entries: [FuelEntry] = []
+        let fillRange = 280...350
+        let count = min(max(km / 300, 3), 8)
+
+        for i in 0..<count {
+            let entryKm = km - i * Int.random(in: fillRange)
+            guard entryKm > 0 else { break }
+            let daysAgo = i * Int.random(in: 6...10)
+            let date = cal.date(byAdding: .day, value: -daysAgo, to: now) ?? now
+            let liters = Double.random(in: (cap * 0.6)...(cap * 0.92))
+            let price = Double.random(in: 1.45...1.85)
+            entries.append(FuelEntry(bikeId: bike.id, date: date, liters: Double(round(liters * 10) / 10), costPerLiter: Double(round(price * 100) / 100), mileage: entryKm, fullTank: true))
+        }
+
+        return entries.sorted { $0.date > $1.date }
     }
 
     // MARK: - CRUD
