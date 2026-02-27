@@ -16,10 +16,13 @@ final class MotoManager: ObservableObject {
         self.intervals = Storage.shared.load(forKey: "intervals", default: [])
         self.fuelLog = Storage.shared.load(forKey: "fuel", default: [])
         self.settings = Storage.shared.load(forKey: "settings", default: MotoSettings())
-        if bikes.isEmpty { bikes = [Bike(name: "My Bike", make: "Honda", model: "CB650R", year: 2024, currentMileage: 12450, fuelCapacityL: 15.4)] }
         if intervals.isEmpty { intervals = ServiceType.allCases.map { ServiceInterval(type: $0, intervalKm: $0.defaultIntervalKm) } }
-        if services.isEmpty { services = MotoManager.sampleServices(bikeId: bikes.first!.id) }
-        if fuelLog.isEmpty { fuelLog = MotoManager.sampleFuel(bikeId: bikes.first!.id) }
+    }
+
+    func setupBike(_ bike: Bike) {
+        bikes = [bike]
+        services = []
+        fuelLog = []
     }
 
     // MARK: - CRUD
@@ -91,17 +94,4 @@ final class MotoManager: ObservableObject {
         return str
     }
 
-    // MARK: - Sample Data
-    private static func sampleServices(bikeId: UUID) -> [ServiceRecord] {
-        [ServiceRecord(bikeId: bikeId, type: .oilChange, mileage: 10000, cost: 45, parts: "Motul 5100 10W-40", notes: "Smooth"),
-         ServiceRecord(bikeId: bikeId, type: .chain, mileage: 8000, cost: 25, parts: "Chain wax, adjustment"),
-         ServiceRecord(bikeId: bikeId, type: .tires, mileage: 5000, cost: 320, parts: "Michelin Road 6 front+rear"),
-         ServiceRecord(bikeId: bikeId, type: .brakes, mileage: 11000, cost: 60, parts: "EBC HH pads front")]
-    }
-
-    private static func sampleFuel(bikeId: UUID) -> [FuelEntry] {
-        [FuelEntry(bikeId: bikeId, liters: 13.2, costPerLiter: 1.65, mileage: 12450, fullTank: true),
-         FuelEntry(bikeId: bikeId, liters: 12.8, costPerLiter: 1.60, mileage: 12150, fullTank: true),
-         FuelEntry(bikeId: bikeId, liters: 11.5, costPerLiter: 1.70, mileage: 11820, fullTank: true)]
-    }
 }
