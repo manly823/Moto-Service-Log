@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C000000000 /* CardStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000001; };
-		C000000010 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000011; };
-		C000000020 /* MotoModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000021; };
-		C000000030 /* MotoServiceLogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000031; };
-		C000000040 /* MotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000041; };
-		C000000050 /* AddFuelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000051; };
-		C000000060 /* AddServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000061; };
-		C000000070 /* CostStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000071; };
-		C000000080 /* FuelLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000081; };
-		C000000090 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000091; };
-		C000000100 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000101; };
-		C000000110 /* ReferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000111; };
-		C000000120 /* ServiceLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000121; };
-		C000000130 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000131; };
-		C900000011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C900000010; };
+		C000000000 /* CardStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000001 /* CardStyle.swift */; };
+		C000000010 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000011 /* Storage.swift */; };
+		C000000020 /* MotoModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000021 /* MotoModels.swift */; };
+		C000000030 /* MotoServiceLogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000031 /* MotoServiceLogApp.swift */; };
+		C000000040 /* MotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000041 /* MotoManager.swift */; };
+		C000000050 /* AddFuelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000051 /* AddFuelView.swift */; };
+		C000000060 /* AddServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000061 /* AddServiceView.swift */; };
+		C000000070 /* CostStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000071 /* CostStatsView.swift */; };
+		C000000080 /* FuelLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000081 /* FuelLogView.swift */; };
+		C000000090 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000091 /* MainView.swift */; };
+		C000000100 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000101 /* OnboardingView.swift */; };
+		C000000110 /* ReferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000111 /* ReferenceView.swift */; };
+		C000000120 /* ServiceLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000121 /* ServiceLogView.swift */; };
+		C000000130 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000131 /* SettingsView.swift */; };
+		C900000011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C900000010 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,70 +45,317 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C900000050 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		C900000050 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C900000001 = {isa = PBXGroup; children = (C900000002, C900000007); sourceTree = "<group>"; };
-		C900000002 /* MotoServiceLog */ = {isa = PBXGroup; children = (C000000031, C900000012, C900000010, C900000003, C900000004, C900000005, C900000006); path = MotoServiceLog; sourceTree = "<group>"; };
-		C900000003 /* Models */ = {isa = PBXGroup; children = (C000000021); path = Models; sourceTree = "<group>"; };
-		C900000004 /* Helpers */ = {isa = PBXGroup; children = (C000000001, C000000011); path = Helpers; sourceTree = "<group>"; };
-		C900000005 /* ViewModels */ = {isa = PBXGroup; children = (C000000041); path = ViewModels; sourceTree = "<group>"; };
-		C900000006 /* Views */ = {isa = PBXGroup; children = (C000000051, C000000061, C000000071, C000000081, C000000091, C000000101, C000000111, C000000121, C000000131); path = Views; sourceTree = "<group>"; };
-		C900000007 /* Products */ = {isa = PBXGroup; children = (C900000020); name = Products; sourceTree = "<group>"; };
+		C900000001 = {
+			isa = PBXGroup;
+			children = (
+				C900000002 /* MotoServiceLog */,
+				C900000007 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C900000002 /* MotoServiceLog */ = {
+			isa = PBXGroup;
+			children = (
+				C000000031 /* MotoServiceLogApp.swift */,
+				C900000012 /* Info.plist */,
+				C900000010 /* Assets.xcassets */,
+				C900000003 /* Models */,
+				C900000004 /* Helpers */,
+				C900000005 /* ViewModels */,
+				C900000006 /* Views */,
+			);
+			path = MotoServiceLog;
+			sourceTree = "<group>";
+		};
+		C900000003 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C000000021 /* MotoModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C900000004 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C000000001 /* CardStyle.swift */,
+				C000000011 /* Storage.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C900000005 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C000000041 /* MotoManager.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C900000006 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C000000051 /* AddFuelView.swift */,
+				C000000061 /* AddServiceView.swift */,
+				C000000071 /* CostStatsView.swift */,
+				C000000081 /* FuelLogView.swift */,
+				C000000091 /* MainView.swift */,
+				C000000101 /* OnboardingView.swift */,
+				C000000111 /* ReferenceView.swift */,
+				C000000121 /* ServiceLogView.swift */,
+				C000000131 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C900000007 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C900000020 /* MotoServiceLog.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C900000030 = {
+		C900000030 /* MotoServiceLog */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C900000081;
-			buildPhases = (C900000060, C900000050, C900000070);
-			buildRules = ();
-			dependencies = ();
+			buildConfigurationList = C900000081 /* Build configuration list for PBXNativeTarget "MotoServiceLog" */;
+			buildPhases = (
+				C900000060 /* Sources */,
+				C900000050 /* Frameworks */,
+				C900000070 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
 			name = MotoServiceLog;
 			productName = MotoServiceLog;
-			productReference = C900000020;
+			productReference = C900000020 /* MotoServiceLog.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C900000040 = {
+		C900000040 /* Project object */ = {
 			isa = PBXProject;
-			attributes = { BuildIndependentTargetsInParallel = 1; LastSwiftUpdateCheck = 1500; LastUpgradeCheck = 1500; TargetAttributes = { C900000030 = { CreatedOnToolsVersion = 15.0; }; }; };
-			buildConfigurationList = C900000080;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					C900000030 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = C900000080 /* Build configuration list for PBXProject "MotoServiceLog" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
-			knownRegions = (en, Base);
+			knownRegions = (
+				en,
+				Base,
+			);
 			mainGroup = C900000001;
-			productRefGroup = C900000007;
+			productRefGroup = C900000007 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
-			targets = (C900000030);
+			targets = (
+				C900000030 /* MotoServiceLog */,
+			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C900000070 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (C900000011); runOnlyForDeploymentPostprocessing = 0; };
+		C900000070 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C900000011 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C900000060 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (C000000000, C000000010, C000000020, C000000030, C000000040, C000000050, C000000060, C000000070, C000000080, C000000090, C000000100, C000000110, C000000120, C000000130); runOnlyForDeploymentPostprocessing = 0; };
+		C900000060 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C000000000 /* CardStyle.swift in Sources */,
+				C000000010 /* Storage.swift in Sources */,
+				C000000020 /* MotoModels.swift in Sources */,
+				C000000030 /* MotoServiceLogApp.swift in Sources */,
+				C000000040 /* MotoManager.swift in Sources */,
+				C000000050 /* AddFuelView.swift in Sources */,
+				C000000060 /* AddServiceView.swift in Sources */,
+				C000000070 /* CostStatsView.swift in Sources */,
+				C000000080 /* FuelLogView.swift in Sources */,
+				C000000090 /* MainView.swift in Sources */,
+				C000000100 /* OnboardingView.swift in Sources */,
+				C000000110 /* ReferenceView.swift in Sources */,
+				C000000120 /* ServiceLogView.swift in Sources */,
+				C000000130 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		C900000082 = {isa = XCBuildConfiguration; buildSettings = { ALWAYS_SEARCH_USER_PATHS = NO; ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES; CLANG_ANALYZER_NONNULL = YES; CLANG_CXX_LANGUAGE_STANDARD = "gnu++20"; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; COPY_PHASE_STRIP = NO; DEBUG_INFORMATION_FORMAT = dwarf; ENABLE_STRICT_OBJC_MSGSEND = YES; ENABLE_TESTABILITY = YES; GCC_DYNAMIC_NO_PIC = NO; GCC_OPTIMIZATION_LEVEL = 0; GCC_PREPROCESSOR_DEFINITIONS = ("DEBUG=1", "$(inherited)"); GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR; GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE; IPHONEOS_DEPLOYMENT_TARGET = 17.0; MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE; MTL_FAST_MATH = YES; ONLY_ACTIVE_ARCH = YES; SDKROOT = iphoneos; SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; }; name = Debug; };
-		C900000083 = {isa = XCBuildConfiguration; buildSettings = { ALWAYS_SEARCH_USER_PATHS = NO; ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES; CLANG_ANALYZER_NONNULL = YES; CLANG_CXX_LANGUAGE_STANDARD = "gnu++20"; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; COPY_PHASE_STRIP = NO; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; ENABLE_NS_ASSERTIONS = NO; ENABLE_STRICT_OBJC_MSGSEND = YES; GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR; GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE; IPHONEOS_DEPLOYMENT_TARGET = 17.0; MTL_FAST_MATH = YES; SDKROOT = iphoneos; SWIFT_COMPILATION_MODE = wholemodule; SWIFT_OPTIMIZATION_LEVEL = "-O"; VALIDATE_PRODUCT = YES; }; name = Release; };
-		C900000084 = {isa = XCBuildConfiguration; buildSettings = { ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; DEVELOPMENT_TEAM = ""; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_FILE = MotoServiceLog/Info.plist; INFOPLIST_KEY_CFBundleDisplayName = "MotoServiceLog"; INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES; INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES; INFOPLIST_KEY_UILaunchScreen_Generation = YES; INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait; LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks"); MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.motoservicelog.app; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Debug; };
-		C900000085 = {isa = XCBuildConfiguration; buildSettings = { ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; DEVELOPMENT_TEAM = ""; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_FILE = MotoServiceLog/Info.plist; INFOPLIST_KEY_CFBundleDisplayName = "MotoServiceLog"; INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES; INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES; INFOPLIST_KEY_UILaunchScreen_Generation = YES; INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait; LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks"); MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.motoservicelog.app; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Release; };
+		C900000082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C900000083 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C900000084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MotoServiceLog/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MotoServiceLog;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.motoservicelog.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C900000085 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MotoServiceLog/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MotoServiceLog;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.motoservicelog.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C900000080 = {isa = XCConfigurationList; buildConfigurations = (C900000082, C900000083); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
-		C900000081 = {isa = XCConfigurationList; buildConfigurations = (C900000084, C900000085); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		C900000080 /* Build configuration list for PBXProject "MotoServiceLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C900000082 /* Debug */,
+				C900000083 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C900000081 /* Build configuration list for PBXNativeTarget "MotoServiceLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C900000084 /* Debug */,
+				C900000085 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
-
 	};
-	rootObject = C900000040;
+	rootObject = C900000040 /* Project object */;
 }
